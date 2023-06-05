@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de celular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <div class="resposta" style="background-color: white;height: 30px;border: none;color: black;text-align: end;font-size: 30px;margin: 3px;"></div>
+        <table>
+            <tr>
+                <td><button onclick="limpar()">C</button></td>
+                <td><button onclick="apagar()"><</button></td>
+                <td><button onclick="adicionar('/')">/</button></td>
+                <td><button onclick="adicionar('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="adicionar('7')">7</button></td>
+                <td><button onclick="adicionar('8')">8</button></td>
+                <td><button onclick="adicionar('9')">9</button></td>
+                <td><button onclick="adicionar('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="adicionar('4')">4</button></td>
+                <td><button onclick="adicionar('5')">5</button></td>
+                <td><button onclick="adicionar('6')">6</button></td>
+                <td><button onclick="adicionar('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="adicionar('1')">1</button></td>
+                <td><button onclick="adicionar('2')">2</button></td>
+                <td><button onclick="adicionar('3')">3</button</td>
+                <td rowspan="2"><button onclick="calcular()" style="height: 102px; background-color: orange;">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" ><button onclick="adicionar('0')" style="width: 102px;">0</button></td>
+                <td><button onclick="adicionar('.')">.</button></td>
+            </tr>
+        </table>
+        <p style="margin-top: 20px;">&copy;PCCF</p>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
